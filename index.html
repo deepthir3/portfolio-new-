@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- ✅ Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -23,276 +33,214 @@
     <!-- Intro Section -->
     <section class="intro-section" id="home">
         <div class="intro-text centered">
-                 <h1>Hi, I'm Krishnan Mani Ramakrishnan Deepthi!</h1>
-    <p>
-        Aspiring Software Development Engineer with expertise in data structures, algorithms, backend systems, and full-stack development.
-    </p>
-    <p>
-        Skilled in building scalable architectures, designing RESTful APIs, and managing databases on cloud platforms (AWS, Azure, GCP).
-    </p>
-    <p>
-        Passionate about competitive programming, system design, and delivering reliable, efficient software solutions.
-    </p>
-</div>
-
-        
+            <h1>Hi, I'm Krishnan Mani Ramakrishnan Deepthi!</h1>
+            <p>
+                Aspiring Software Development Engineer with expertise in data structures, algorithms, backend systems, and full-stack development.
+            </p>
+            <p>
+                Skilled in building scalable architectures, designing RESTful APIs, and managing databases on cloud platforms (AWS, Azure, GCP).
+            </p>
+            <p>
+                Passionate about competitive programming, system design, and delivering reliable, efficient software solutions.
+            </p>
+        </div>
     </section>
 
-  
- <!-- About Section -->
-<section class="about-section" id="about">
-    <div class="about-box smaller">
-        <div class="about-text-box">
-            <h2>About Me</h2>
-            <p>
-                Aspiring Software Development Engineer with expertise in data structures, algorithms, backend systems, and full-stack development. 
-                Skilled in building scalable architectures, designing RESTful APIs, managing relational and NoSQL databases, and implementing real-time analytics on cloud platforms (AWS, Azure, GCP). 
-                Adept at DevOps practices, CI/CD automation, and agile software delivery with a proven track record of contributing to impactful projects.
-            </p>
-            <p>
-                Passionate about competitive programming and system design, with hands-on experience in solving complex engineering challenges and delivering efficient solutions.
-            </p>
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-box smaller">
+            <div class="about-text-box">
+                <h2>About Me</h2>
+                <p>
+                    Aspiring Software Development Engineer with expertise in data structures, algorithms, backend systems, and full-stack development. 
+                    Skilled in building scalable architectures, designing RESTful APIs, managing relational and NoSQL databases, and implementing real-time analytics on cloud platforms (AWS, Azure, GCP). 
+                    Adept at DevOps practices, CI/CD automation, and agile software delivery with a proven track record of contributing to impactful projects.
+                </p>
+                <p>
+                    Passionate about competitive programming and system design, with hands-on experience in solving complex engineering challenges and delivering efficient solutions.
+                </p>
+            </div>
+            <div class="about-image-box">
+                <img src="ME.png" alt="About Me Image">
+            </div>
         </div>
-        <div class="about-image-box">
-            <img src="ME.png" alt="About Me Image">
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-section" id="education">
+        <div class="education-box professional">
+            <h2>Education</h2>
+            <ul>
+                <li class="education-item">
+                    <strong>Bachelor of Engineering (B.E.) in Computer Engineering</strong>, SIES Graduate School of Technology, Mumbai<br>
+                    CGPA: 8.98 | 2020 - 2024
+                </li>
+            </ul>
         </div>
-    </div>
-</section>
+    </section>
 
+    <!-- Experience Section -->
+    <section class="experience-section" id="experience">
+        <h2 class="experience-title">Experience</h2>
+        <div class="timeline">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Graduate Engineer Trainee - Jio Platforms Limited via QuessCorp</h3>
+                    <p>Contributed to designing and implementing scalable web solutions while managing and optimizing databases. 
+                    Developed RESTful APIs, automated workflows, and ensured reliable data storage and retrieval for high-traffic applications.</p>
+                    <p class="date">October 2024 - Present</p>
+                </div>
+            </div>
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Full Stack Developer & Database Administrator Intern - Reliance Jio</h3>
+                    <p>Built scalable web solutions and optimized databases for reliable performance.</p>
+                    <ul class="project-branches">
+                        <li><strong>Cross-Platform Voice Assistant:</strong> Fetched Tableau dashboards using Python automation and AI-driven pipelines.</li>
+                        <li><strong>Employee Award Video Analytics:</strong> Detected award mentions in videos, extracted images, and marked timestamps with OpenCV & NLP.</li>
+                    </ul>
+                    <p class="date">June 2024 - August 2024 | Mumbai, India</p>
+                </div>
+            </div>
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Data Visualization Intern - SIES GST</h3>
+                    <p>Designed and implemented dashboards for real-time data insights.</p>
+                    <p class="date">June 2024 - July 2024 | Mumbai, India</p>
+                </div>
+            </div>
+            <!-- Timeline Item 4 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Cloud Intern - Pie Infocomm</h3>
+                    <p>Worked on cloud infrastructure setup and optimization.</p>
+                    <p class="date">January 2023 - March 2023 | Mumbai, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    
- <!-- Education Section -->
-<section class="education-section" id="education">
-    <div class="education-box professional">
-        <h2>Education</h2>
-        <ul>
-            <li class="education-item">
-                <strong>Bachelor of Engineering (B.E.) in Computer Engineering</strong>, SIES Graduate School of Technology, Mumbai<br>
-                CGPA: 8.98 | 2020 - 2024
-            </li>
-        </ul>
-    </div>
-</section>
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <h2 class="projects-title">Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Diabetic Retinopathy Detection</h3>
+                <p>Developed a model using GANs to detect diabetic retinopathy with enhanced accuracy.</p>
+                <a href="https://github.com/deepthir3/dr-detection-using-gan" target="_blank" class="project-link">View Project →</a>
+            </div>
+            <div class="project-card">
+                <h3>Data Leakage Detection</h3>
+                <p>Implemented an intelligent system for secure detection and prevention of data leakage.</p>
+                <a href="https://github.com/deepthir3/dataleakage-detection" target="_blank" class="project-link">View Project →</a>
+            </div>
+            <div class="project-card">
+                <h3>Live Twitter Sentiment Analysis</h3>
+                <p>Built a sentiment analysis tool for live tweets using Python and NLP.</p>
+                <a href="https://github.com/deepthir3/tweet-classification" target="_blank" class="project-link">View Project →</a>
+            </div>
+            <div class="project-card">
+                <h3>Flutter App with DALL·E & ChatGPT</h3>
+                <p>Created a Flutter-based app integrating AI models like DALL·E and ChatGPT for enhanced interactivity.</p>
+                <a href="https://github.com/deepthir3/flutter-iusing-dall-e-and-chatgpt" target="_blank" class="project-link">View Project →</a>
+            </div>
+        </div>
+    </section>
 
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <h1>My Skills</h1>
 
+        <h2>Programming Languages</h2>
+        <div class="skills">
+            <div class="skill-card"><i class="devicon-java-plain colored"></i><p>Java</p></div>
+            <div class="skill-card"><i class="devicon-python-plain colored"></i><p>Python</p></div>
+            <div class="skill-card"><i class="devicon-cplusplus-plain colored"></i><p>C++</p></div>
+            <div class="skill-card"><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
+            <div class="skill-card"><i class="devicon-c-plain colored"></i><p>C</p></div>
+        </div>
+
+        <h2>Frameworks & Development</h2>
+        <div class="skills">
+            <div class="skill-card"><i class="devicon-flutter-plain colored"></i><p>Flutter</p></div>
+            <div class="skill-card"><i class="devicon-react-original colored"></i><p>React</p></div>
+            <div class="skill-card"><i class="devicon-angularjs-plain colored"></i><p>Angular</p></div>
+            <div class="skill-card"><i class="devicon-django-plain colored"></i><p>Django</p></div>
+            <div class="skill-card"><i class="devicon-react-original colored"></i><p>React Native</p></div>
+        </div>
+
+        <h2>Databases & Replication</h2>
+        <div class="skills">
+            <div class="skill-card"><i class="devicon-mysql-plain colored"></i><p>MySQL</p></div>
+            <div class="skill-card"><i class="devicon-postgresql-plain colored"></i><p>PostgreSQL</p></div>
+            <div class="skill-card"><i class="devicon-mongodb-plain colored"></i><p>MongoDB</p></div>
+            <div class="skill-card"><i class="devicon-oracle-original colored"></i><p>Oracle</p></div>
+            <div class="skill-card"><i class="devicon-redis-plain colored"></i><p>Redis</p></div>
+            <div class="skill-card"><img src="goldengate.png" alt="Oracle GoldenGate Icon"><p>Oracle GoldenGate</p></div>
+            <div class="skill-card"><img src="kafka.png" alt="Apache Kafka"><p>Apache Kafka</p></div>
+            <div class="skill-card"><img src="airflow.png" alt="Apache Airflow"><p>Apache Airflow</p></div>
+        </div>
+
+        <h2>Cloud & DevOps</h2>
+        <div class="skills">
+            <div class="skill-card"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><p>AWS</p></div>
+            <div class="skill-card"><i class="devicon-azure-plain colored"></i><p>Azure</p></div>
+            <div class="skill-card"><i class="devicon-googlecloud-plain colored"></i><p>GCP</p></div>
+            <div class="skill-card"><img src="databricks.png" alt="Databricks icon"><p>Databricks</p></div>
+            <div class="skill-card"><i class="devicon-docker-plain colored"></i><p>Docker</p></div>
+            <div class="skill-card"><i class="devicon-kubernetes-plain colored"></i><p>Kubernetes</p></div>
+            <div class="skill-card"><i class="devicon-jenkins-plain colored"></i><p>Jenkins</p></div>
+            <div class="skill-card"><img src="cicd.png" alt="CI/CD icon"><p>CI/CD</p></div>
+        </div>
+
+        <h2>Tools & Testing</h2>
+        <div class="skills">
+            <div class="skill-card"><i class="devicon-git-plain colored"></i><p>Git</p></div>
+            <div class="skill-card"><i class="devicon-github-original colored"></i><p>GitHub</p></div>
+            <div class="skill-card"><i class="devicon-vscode-plain colored"></i><p>VS Code</p></div>
+            <div class="skill-card"><i class="devicon-jupyter-plain colored"></i><p>Jupyter</p></div>
+            <div class="skill-card"><p>Postman</p><img src="postman.png" alt="Postman" width="40"></div>
+            <div class="skill-card"><i class="devicon-figma-plain colored"></i><p>Figma</p></div>
+            <div class="skill-card testing-card"><p>Unit Testing</p></div>
+            <div class="skill-card testing-card"><p>Automated Testing</p></div>
+        </div>
+
+        <h2>Core Software Engineering Concepts</h2>
+        <div class="skills">
+            <div class="skill-card"><p>DSA</p></div>
+            <div class="skill-card"><p>OOP</p></div>
+            <div class="skill-card"><p>System Design</p></div>
+            <div class="skill-card"><p>Microservices</p></div>
+            <div class="skill-card"><p>REST APIs</p></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-details">
+                <div class="contact-card">
+                    <h3>Phone</h3>
+                    <p>+91-8779043526</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <p>kmrdeepthi7@gmail.com</p>
+                </div>
+                <div class="contact-card">
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://www.linkedin.com/in/krishnan-mani-ramakrishnan-deepthi-73b897221/" target="_blank">linkedin.com/in/krishnan-mani-ramakrishnan-deepthi</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3>GitHub</h3>
+                    <p><a href="https://github.com/deepthir3" target="_blank">github.com/deepthir3</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
-<!-- Experience Section -->
-<section class="experience-section" id="experience">
-    <h2 class="experience-title">Experience</h2>
-    <div class="timeline">
-        <!-- Timeline Item 1 -->
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>Graduate Engineer Trainee - Jio Platfroms Limited via QuessCorp</h3>
-                <p>Contributed to designing and implementing scalable web solutions while managing and optimizing databases. 
-            Developed RESTful APIs, automated workflows, and ensured reliable data storage and retrieval for high-traffic applications.
-                <p class="date">October 2024 - Present</p>
-            </div>
-        </div>
-        <!-- Timeline Item 2 -->
-        <div class="timeline-item">
-    <div class="timeline-content">
-        <h3>Full Stack Developer & Database Administrator Intern - Reliance Jio</h3>
-        <p>Built scalable web solutions and optimized databases for reliable performance.</p>
-        <ul class="project-branches">
-            <li>
-                <strong>Cross-Platform Voice Assistant:</strong> Fetched Tableau dashboards using Python automation and AI-driven pipelines.
-            </li>
-            <li>
-                <strong>Employee Award Video Analytics:</strong> Detected award mentions in videos, extracted images, and marked timestamps with OpenCV & NLP.
-            </li>
-        </ul>
-        <p class="date">June 2024 - August 2024 | Mumbai, India</p>
-    </div>
-</div>
-        <!-- Timeline Item 3 -->
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>Data Visualization Intern - SIES GST</h3>
-                <p>Designed and implemented dashboards for real-time data insights.</p>
-                <p class="date">June 2024 - July 2024 | Mumbai, India</p>
-            </div>
-        </div>
-        <!-- Timeline Item 4 -->
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>Cloud Intern - Pie Infocomm</h3>
-                <p>Worked on cloud infrastructure setup and optimization.</p>
-                <p class="date">January 2023 - March 2023 | Mumbai, India</p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Projects Section -->
-<section class="projects-section" id="projects">
-    <h2 class="projects-title">Projects</h2>
-    <div class="projects-container">
-        <!-- Project Card 1 -->
-        <div class="project-card">
-            <h3>Diabetic Retinopathy Detection</h3>
-            <p>Developed a model using GANs to detect diabetic retinopathy with enhanced accuracy.</p>
-            <a href="https://github.com/deepthir3/dr-detection-using-gan" target="_blank" class="project-link">
-                View Project →
-            </a>
-        </div>
-        <!-- Project Card 2 -->
-        <div class="project-card">
-            <h3>Data Leakage Detection</h3>
-            <p>Implemented an intelligent system for secure detection and prevention of data leakage.</p>
-            <a href="https://github.com/deepthir3/dataleakage-detection" target="_blank" class="project-link">
-                View Project →
-            </a>
-        </div>
-        <!-- Project Card 3 -->
-        <div class="project-card">
-            <h3>Live Twitter Sentiment Analysis</h3>
-            <p>Built a sentiment analysis tool for live tweets using Python and NLP.</p>
-            <a href="https://github.com/deepthir3/tweet-classification" target="_blank" class="project-link">
-                View Project →
-            </a>
-        </div>
-        <!-- Project Card 4 -->
-        <div class="project-card">
-            <h3>Flutter App with DALL·E & ChatGPT</h3>
-            <p>Created a Flutter-based app integrating AI models like DALL·E and ChatGPT for enhanced interactivity.</p>
-            <a href="https://github.com/deepthir3/flutter-iusing-dall-e-and-chatgpt" target="_blank" class="project-link">
-                View Project →
-            </a>
-        </div>
-    </div>
-</section>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skills Section</title>
-  <!-- Devicon for logos -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <section class="skills-section">
-    <h1>My Skills</h1>
-
-    <!-- Programming Languages -->
-    <h2>Programming Languages</h2>
-    <div class="skills">
-      <div class="skill-card"><i class="devicon-java-plain colored"></i><p>Java</p></div>
-      <div class="skill-card"><i class="devicon-python-plain colored"></i><p>Python</p></div>
-      <div class="skill-card"><i class="devicon-cplusplus-plain colored"></i><p>C++</p></div>
-      <div class="skill-card"><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
-      <div class="skill-card"><i class="devicon-c-plain colored"></i><p>C</p></div>
-
-    </div>
-
-    <!-- Frameworks & Development -->
-    <h2>Frameworks & Development</h2>
-    <div class="skills">
-      <div class="skill-card"><i class="devicon-flutter-plain colored"></i><p>Flutter</p></div>
-      <div class="skill-card"><i class="devicon-react-original colored"></i><p>React</p></div>
-      <div class="skill-card"><i class="devicon-angularjs-plain colored"></i><p>Angular</p></div>
-      <div class="skill-card"><i class="devicon-django-plain colored"></i><p>Django</p></div>
-      <div class="skill-card"><i class="devicon-react-original colored"></i><p>React Native</p></div>
-    </div>
-
-    <!-- Databases & Replication -->
-    <h2>Databases & Replication</h2>
-    <div class="skills">
-      <div class="skill-card"><i class="devicon-mysql-plain colored"></i><p>MySQL</p></div>
-      <div class="skill-card"><i class="devicon-postgresql-plain colored"></i><p>PostgreSQL</p></div>
-      <div class="skill-card"><i class="devicon-mongodb-plain colored"></i><p>MongoDB</p></div>
-      <div class="skill-card"><i class="devicon-oracle-original colored"></i><p>Oracle</p></div>
-      <div class="skill-card"><i class="devicon-redis-plain colored"></i><p>Redis</p></div>
-      <div class="skill-card"><img src="goldengate.png" alt="Oracle GoldenGate Icon">
-    <p>Oracle GoldenGate</p></div> 
-       <div class="skill-card"><img src="kafka.png" alt="Apache kafka">
-    <p>Apache Kafka</p></div>
-      <div class="skill-card"><img src="airflow.png" alt="Apache airflow icon">
-    <p>Apache Airflow</p></div>
-    </div>
-
-    <!-- Cloud & DevOps -->
-    <h2>Cloud & DevOps</h2>
-    <div class="skills">
-      <div class="skill-card"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><p>AWS</p></div>
-      <div class="skill-card"><i class="devicon-azure-plain colored"></i><p>Azure</p></div>
-      <div class="skill-card"><i class="devicon-googlecloud-plain colored"></i><p>GCP</p></div>
-      <div class="skill-card"><img src="databricks.png" alt="databricks icon">
-    <p>Databricks</p></div>
-      <div class="skill-card"><i class="devicon-docker-plain colored"></i><p>Docker</p></div>
-      <div class="skill-card"><i class="devicon-kubernetes-plain colored"></i><p>Kubernetes</p></div>
-      <div class="skill-card"><i class="devicon-jenkins-plain colored"></i><p>Jenkins</p></div>
-      <div class="skill-card"><img src="cicd.png" alt="cicd icon"><p>CI/CD</p></div>
-    </div>
-
-    <!-- Tools & Testing -->
-    <h2>Tools & Testing</h2>
-    <div class="skills">
-   <div class="skill-card"><i class="devicon-git-plain colored"></i><p>Git</p></div>
-    <div class="skill-card"><i class="devicon-github-original colored"></i><p>GitHub</p></div>
-    <div class="skill-card"><i class="devicon-vscode-plain colored"></i><p>VS Code</p></div>
-    <div class="skill-card"><i class="devicon-jupyter-plain colored"></i><p>Jupyter</p></div>
-    <div class="skill-card"><p>Postman</p><img src="postman.png" alt="Postman" width="40"></div>
-    <div class="skill-card"><i class="devicon-figma-plain colored"></i><p>Figma</p></div>
-    <div class="skill-card testing-card"><p>Unit Testing</p></div>
-    <div class="skill-card testing-card"><p>Automated Testing</p></div>
-</div>
-<!-- Core Software Engineering Concepts -->
-<h2>Core Software Engineering Concepts</h2>
-<div class="skills">
-    <div class="skill-card">
-        
-        <p>DSA</p>
-    </div>
-    <div class="skill-card">
-        
-        <p>OOP</p>
-    </div>
-    <div class="skill-card">
-       
-        <p>System Design</p>
-    </div>
-    <div class="skill-card">
-        <p>Microservices</p>
-    </div>
-    <div class="skill-card">
-        <p>REST APIs</p>
-    </div>
-</div>
-
-
-
-  </section>
-<!-- Contact Section -->
-<section class="contact-section" id="contact">
-    <h2>Contact Me</h2>
-    <div class="contact-container">
-        <!-- Contact Details -->
-        <div class="contact-details">
-            <div class="contact-card">
-                <h3>Phone</h3>
-                <p>+91-8779043526</p>
-            </div>
-            <div class="contact-card">
-                <h3>Email</h3>
-                <p>kmrdeepthi7@gmail.com</p>
-            </div>
-            <div class="contact-card">
-                <h3>LinkedIn</h3>
-                <p><a href="https://www.linkedin.com/in/krishnan-mani-ramakrishnan-deepthi-73b897221/" target="_blank">linkedin.com/in/krishnan-mani-ramakrishnan-deepthi</a></p>
-            </div>
-            <div class="contact-card">
-                <h3>GitHub</h3>
-                <p><a href="https://github.com/deepthir3" target="_blank">github.com/deepthir3</a></p>
-            </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-</body>
-
